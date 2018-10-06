@@ -2,10 +2,10 @@
 # -------------------------------------------------------------
 # Script to display the CPU & GPU temperature of a Raspberry Pi
 # in the console.
-# NOTE: 	(1)	To make the shell script executable: 
-#					chmod u+x rpitemperature.sh
-#			(2)	Uses a command line calculator, bc.
-#					sudo apt-get install bc
+# NOTE: (1)	To make the shell script executable:
+#		chmod u+x rpitemperature.sh
+#	(2)	Uses a command line calculator, bc.
+#		sudo apt-get install bc
 # -------------------------------------------------------------
 # Get the temperature of the CPU, in Celsius
 cpuTemp0=$(cat /sys/class/thermal/thermal_zone0/temp)
