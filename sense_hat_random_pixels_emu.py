@@ -26,7 +26,7 @@ except RuntimeError:
 	print("Error importing Sense HAT emulator module!")
 
 # Instantiate the Sense HAT object.
-sense = sense_hat.SenseHat()
+sense = SenseHat()
 
 # Define the main() function.
 def main():
