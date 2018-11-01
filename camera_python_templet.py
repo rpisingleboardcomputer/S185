@@ -1,11 +1,10 @@
-﻿
 #!/usr/bin/python3
 #-*- coding: utf-8 -*-
 
 """
 S185 - Introduction to Single-Board Computers
 
-A simple python script template for the Raspberry Pi Camera Module.
+A python script template for the Raspberry Pi Camera Module.
 
 Execution:
 1. Set the executable flag on the script: chmod u+x camera_python_templet.py
@@ -51,4 +50,4 @@ if __name__ == '__main__':
 		# This method stops all recording and preview activities and releases
 		#	all resources associated with the camera; this is necessary to
 		#	prevent GPU memory leaks.
-      camera.close()
+		camera.close()
