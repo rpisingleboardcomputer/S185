@@ -1,18 +1,18 @@
-﻿#!/usr/bin/python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/python3
+#-*- coding: utf-8 -*-
 
 """
 S185 - Introduction to Single-Board Computers
 
-A simple python script to capture an image to a file using the 
+A python script to capture an image to a file using the
 Raspberry Pi Camera Module.
 
 Execution:
 1. Set the executable flag on the script: chmod u+x camera_capture.py
-2. Execute with a preceding dot "./", so call ./camera_capture.py 
+2. Execute with a preceding dot "./", so call ./camera_capture.py
 """
 
-#  Import required modules.
+# Import required modules.
 import os
 import sys
 import argparse
@@ -29,7 +29,7 @@ camera = picamera.PiCamera()
 
 # Define the main() function.
 def main():
-	# Delay for at least 5 seconds before capturing, to give the sensor 
+	# Delay for at least 5 seconds before capturing, to give the sensor
 	#	time to set its light levels.
 	time.sleep(5)
 
@@ -55,4 +55,4 @@ if __name__ == '__main__':
 		# This method stops all recording and preview activities and releases
 		#	all resources associated with the camera; this is necessary to
 		#	prevent GPU memory leaks.
-      camera.close()
+		camera.close()
