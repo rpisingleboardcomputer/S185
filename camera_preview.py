@@ -1,4 +1,3 @@
-﻿
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
@@ -57,4 +56,4 @@ if __name__ == '__main__':
 		# This method stops all recording and preview activities and releases
 		#	all resources associated with the camera; this is necessary to
 		#	prevent GPU memory leaks.
-      camera.close()
+		camera.close()
