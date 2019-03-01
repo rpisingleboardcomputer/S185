@@ -30,19 +30,19 @@ sense = sense_hat.SenseHat()
 def main():
 	# Gets the percentage of relative humidity from the humidity sensor.
 	humidity = sense.get_humidity()
-	print("                     Humidity: %s %%rH" % humidity)
+	print("                     Humidity: %s %%rH" % round(humidity,2))
 
 	# Gets the current temperature in degrees Celsius from the humidity sensor.
 	temp_1 = sense.get_temperature()
-	print("(Humidity Sensor) Temperature: %s ºC" % temp_1)
+	print("(Humidity Sensor) Temperature: %s ºC" % round(temp_1,2))
 
 	# Gets the current temperature in degrees Celsius from the pressure sensor.
 	temp_2 = sense.get_temperature_from_pressure()
-	print("(Pressure Sensor) Temperature: %s ºC" % temp_2)
+	print("(Pressure Sensor) Temperature: %s ºC" % round(temp_2,2))
 
 	# Gets the current pressure in Millibars from the pressure sensor.
 	pressure = sense.get_pressure()
-	print("                     Pressure: %s Millibars" % pressure)
+	print("                     Pressure: %s Millibars" % round(pressure,2))
 # EOF: main()
 
 # ------------------------------------------------- BEGIN EXECUTION HERE --
